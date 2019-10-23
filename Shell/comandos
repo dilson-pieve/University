@@ -1,0 +1,52 @@
+
+chmod 774 arq.sh
+
+pwd	diretório atual
+cd name	entra diretório
+ls	mostra arquivos da pasta
+man	manual
+
+cat  -n name.txt	mostra texto com as linhas, cat mostra conteúdo/tac mostra contrário
+head -5 name.txt	mostra 5 primeiras linhas
+tail -3 name.txt	mostra 3 últimas linhas
+
+wc name.txt	qt linhas, palavras, caracteres
+
+ls -l	"-" means regular file
+	read/write/execute
+	shows -> file type, permissions, numbers hard links, owner, group, size, data/time 
+	and file name
+
+ls *.txt	arquivos tipo .txt
+
+ls -l > arq.txt	joga para arq01 o retorno de ls -l
+
+free > arq.txt	apagar conteúdo do arquivo
+
+cal > arq01.txt	colocar calendário do mês no arquivo
+
+sort -r arq.txt	ordenar reverso
+rm arq.txt	apaga o arquivo
+
+
+cat estados.brasil | tr a-z A-Z -> transformar maiusculo
+		(pipe -> output primeiro comando é input do segundo comando)
+
+paste arq1 arq2	concatena linha linha
+
+cat palavras.txt | tr '[a-z]' '[A-Z]' > palavras2.txt	tr vai pegar output do cat e 				transformar letras minusculas por 				maiusculas			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
