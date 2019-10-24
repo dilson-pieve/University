@@ -32,16 +32,6 @@ def mostrar(bot, update):
     chat_id = update.message.chat_id
     bot.send_photo(chat_id=chat_id, photo=url)
 
-#def telegram_bot_sendtext(bot_message):
-    
-   # bot_token = '931238762:AAFKGiSsK4Ov8ayuh3D3gY252PIuzRvrXS0'
-   # bot_chatID = update.message.chat_id
-   # send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + bot_chatID + '&parse_mode=Markdown&text=' + bot_message
-
-    #response = requests.get(send_text)
-
-    #return response.json()
-
 
 def report():
     my_balance = 10   ## Replace this number with an API call to fetch your account balance
