@@ -1,12 +1,12 @@
 
 -- ex18
 
---maneira rápida de escrever
+--maneira rápida 
 inverteListaR :: [Int] -> [Int]
 inverteListaR x = reverse x
 
 
---maneira lenta
+--na "mão"
 inverteLista :: [Int] -> [Int]
 inverteLista [] = []
 inverteLista (h:t)  = inverteLista t ++ [h]
