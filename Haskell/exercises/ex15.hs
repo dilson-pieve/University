@@ -1,4 +1,3 @@
-
 -- ex15
 
 inserePrimeiro :: Int -> [Int] -> [Int]
