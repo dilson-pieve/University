@@ -59,12 +59,14 @@ buscaPAux _ [] v = v
 buscaPAux g (c:e) v = buscaPAux (g) ([x | x <- adj g c, notElem x v]++e) (concatena c v)
 
 -- Inicio Auxiliares
+
 adj::Grafo->Int->ListInt
 adj [] _ = []
 adj ((a,b):c) x = if (x == a) then b else adj c x
 
 concatena::Int->ListInt->ListInt
 concatena c v = if notElem c v then (v++[c]) else v
+
 -- Fim Auxiliares
 
 -- 7) Busca Largura
