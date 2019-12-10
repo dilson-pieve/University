@@ -1,4 +1,3 @@
-
 -- ex20
 
 inic :: [Int] -> Int -> [Int]
