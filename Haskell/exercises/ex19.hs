@@ -1,4 +1,3 @@
-
 -- ex19
 
 media :: [Float] -> Float
