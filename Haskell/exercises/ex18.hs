@@ -1,4 +1,3 @@
-
 -- ex18
 
 --maneira rápida 
