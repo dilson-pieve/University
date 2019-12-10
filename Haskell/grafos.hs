@@ -19,7 +19,7 @@ euleriano [ ] = True
 euleriano g | all even (degreeL g) && length  [x | x <- vertices g, notElem x (buscaP g 1) ] == 0 = True
 --(pseudo)  | (length [x | x <- degreeL g, odd x] == 2) = True
             | otherwise = False
--- Auxiliares
+-- Início Auxiliares
 degree::Vertice -> Int
 degree (a, b) = length(b)
 
@@ -30,6 +30,8 @@ degreeL (x:c) = degree(x):degreeL(c)
 vertices::Grafo->ListInt
 vertices [] = []
 vertices ((a,b):c) = a:vertices c
+-- Fim auxiliares
+
 
 -- 4) Complemento
 complemento::Grafo->Grafo
@@ -56,13 +58,14 @@ buscaPAux::Grafo->ListInt->ListInt->ListInt
 buscaPAux _ [] v = v
 buscaPAux g (c:e) v = buscaPAux (g) ([x | x <- adj g c, notElem x v]++e) (concatena c v)
 
--- Auxiliares
+-- Inicio Auxiliares
 adj::Grafo->Int->ListInt
 adj [] _ = []
 adj ((a,b):c) x = if (x == a) then b else adj c x
 
 concatena::Int->ListInt->ListInt
 concatena c v = if notElem c v then (v++[c]) else v
+-- Fim Auxiliares
 
 -- 7) Busca Largura
 buscaL::Grafo->Int->ListInt
@@ -71,10 +74,6 @@ buscaL g s = buscaLAux g [s] []
 buscaLAux::Grafo->ListInt->ListInt->ListInt
 buscaLAux _ [] v = v
 buscaLAux g (c:e) v = buscaLAux (g) (e++[x | x <- adj g c, notElem x v]) (concatena c v)
-
-
-
-
 
 
 
