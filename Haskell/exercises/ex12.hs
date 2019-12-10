@@ -23,8 +23,5 @@ somaNatAux :: Int -> Int -> Int
 somaNatAux 0 y = y
 somaNatAux x y = somaNatAux (x-1) (y+1)
 
-
--- fim ex12
-
 -- Autor: Dilson Gabriel Pieve
 
