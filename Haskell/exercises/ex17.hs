@@ -1,4 +1,3 @@
-
 -- ex17
 
 --entrada: tenho, quero que seja, str atual, str resposta
