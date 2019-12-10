@@ -9,8 +9,8 @@
 
 fib :: Int -> Int
 fib n	= if n <= 2 then 1 else fibAux 1 1 (n - 2)
-								where
-									fibAux a b n 	| (n == 1)  = (a + b)						
-												 	| otherwise = fibAux b (a + b) (n - 1)
+	where
+		fibAux a b n 	| (n == 1)  = (a + b)						
+						| otherwise = fibAux b (a + b) (n - 1)
 
 
