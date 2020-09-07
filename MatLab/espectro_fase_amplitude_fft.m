@@ -19,3 +19,18 @@ function [freq,Ampl,Fase] = espectro(sinal, fs)
   grid on;
 endfunction
 
+
+%Espectro mostrando a parte refletida
+
+%T = 1/1000;
+%fs = 1/T; %freq amostragem
+%df = fs/length(sinal); %intervalo entre cada frequencia
+%f = 0:df:fs-df; %vetor de frequencias
+
+%Fsinal = fft(sinal);
+%figure(1),stem(f, abs(Fsinal) * 2/length(sinal)); grid on; %correção da amplitude
+
+
+  
+
+
